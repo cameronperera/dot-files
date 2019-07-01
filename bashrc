@@ -118,3 +118,4 @@ fi
 
 export PATH=$PATH:~/scripts
 export PATH=~/.ellipsis/bin:$PATH
+. /usr/share/autojump/autojump.sh
