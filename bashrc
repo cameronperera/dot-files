@@ -2,6 +2,12 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# CUSTOM ADDITIONS
+
+export PATH=$PATH:~/scripts
+export PATH=~/.ellipsis/bin:$PATH
+. /usr/share/autojump/autojump.sh
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -115,7 +121,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-export PATH=$PATH:~/scripts
-export PATH=~/.ellipsis/bin:$PATH
-. /usr/share/autojump/autojump.sh
