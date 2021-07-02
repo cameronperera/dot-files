@@ -1,2 +1,18 @@
 source ~/.vimrc
 set surround
+
+nnoremap ,e :action SearchEverywhere<CR>
+nnoremap ,g :action FindInPath<CR>
+nnoremap ,s :action FileStructurePopup<CR>
+
+nnoremap gi :action GotoDeclaration<CR>
+nnoremap gd :action GotoImplementation<CR>
+
+nnoremap U :action FindUsages<CR>
+nnoremap R :action RenameElement<CR>
+
+nnoremap == :action ReformatCode<CR>
+vnoremap == :action ReformatCode<CR>
+
+nnoremap cc :action CommentByLineComment<CR>
+vnoremap cc :action CommentByLineComment<CR>
